@@ -36,7 +36,7 @@ const DigitalTools = ({ productsPromise }) => {
           type="radio"
           name="my_tabs_1"
           className="tab"
-          aria-label="Cart"
+          aria-label={`Cart (${carts.length})`}
         />
       </div>
 

@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import Products from "../Products/Products";
 import Carts from "../Carts/Carts";
 
-const DigitalTools = () => {
+const DigitalTools = ({ productsPromise }) => {
+  const products = use(productsPromise);
+  //   console.log(products);
   const [active, setActive] = useState("products");
+
+  const [carts, setCart] = useState([]);
+
+
+//   console.log(carts);
   return (
     <div>
       <div className="text-center mt-10">
@@ -33,8 +40,8 @@ const DigitalTools = () => {
         />
       </div>
 
-      {active === "products" && <Products />}
-      {active === "cart" && <Carts />}
+      {active === "products" && <Products carts={carts} setCart={setCart} products={products} />}
+      {active === "cart" && <Carts carts={carts} setCart={setCart}/>}
     </div>
   );
 };

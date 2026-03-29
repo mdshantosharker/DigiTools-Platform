@@ -1,9 +1,12 @@
 import React from "react";
+import Cart from "../Cart/Cart";
 
-const Carts = () => {
+const Carts = ({ carts, setCart }) => {
   return (
     <div>
-      <h1>Carts</h1>
+      {carts.map((cart) => (
+        <Cart cart={cart} carts={carts} setCart={setCart}/>
+      ))}
     </div>
   );
 };

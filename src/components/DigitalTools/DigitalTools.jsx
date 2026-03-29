@@ -2,15 +2,12 @@ import React, { use, useState } from "react";
 import Products from "../Products/Products";
 import Carts from "../Carts/Carts";
 
-const DigitalTools = ({ productsPromise }) => {
+const DigitalTools = ({ productsPromise, carts, setCart }) => {
   const products = use(productsPromise);
   //   console.log(products);
   const [active, setActive] = useState("products");
 
-  const [carts, setCart] = useState([]);
-
-
-//   console.log(carts);
+  //   console.log(carts);
   return (
     <div>
       <div className="text-center mt-10">
@@ -21,7 +18,6 @@ const DigitalTools = ({ productsPromise }) => {
         </p>
       </div>
 
-      {/* name of each tab group should be unique */}
       <div className="tabs tabs-box justify-center bg-white mt-10">
         <input
           onClick={() => setActive("products")}
@@ -40,8 +36,10 @@ const DigitalTools = ({ productsPromise }) => {
         />
       </div>
 
-      {active === "products" && <Products carts={carts} setCart={setCart} products={products} />}
-      {active === "cart" && <Carts carts={carts} setCart={setCart}/>}
+      {active === "products" && (
+        <Products carts={carts} setCart={setCart} products={products} />
+      )}
+      {active === "cart" && <Carts carts={carts} setCart={setCart} />}
     </div>
   );
 };

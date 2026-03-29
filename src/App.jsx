@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import ActiveUsers from "./components/ActiveUsers/ActiveUsers";
 import Banner from "./components/Banner/Banner";
@@ -12,12 +13,13 @@ const fetchProducts = async () => {
 const productsPromise = fetchProducts();
 
 function App() {
+  const [carts, setCart] = useState([]);
   return (
     <>
-      <Navbar />
+      <Navbar carts={carts}/>
       <Banner />
       <ActiveUsers />
-      <DigitalTools productsPromise={productsPromise} />
+      <DigitalTools productsPromise={productsPromise} carts={carts} setCart={setCart} />
     </>
   );
 }

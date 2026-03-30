@@ -1,10 +1,8 @@
 import React, { use } from "react";
 import StartCart from "../StartCart/StartCart";
-
-// console.log({startPromise});
 const StartIn = ({ startPromise }) => {
   const starts = use(startPromise);
-  console.log(starts);
+
   return (
     <>
       <div className="bg-[#F9FAFC] p-10 mt-20">

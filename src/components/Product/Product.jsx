@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import List from "../List/List";
 
 const Product = ({ product, carts, setCart }) => {
-  const { name, icon, description, features, price, tag } = product;
+  const { name, icon, description, features, price, tag, period } = product;
   const [buy, setBuy] = useState(false);
   const handleBuy = () => {
     setBuy(true);
@@ -16,7 +16,7 @@ const Product = ({ product, carts, setCart }) => {
   };
   return (
     <div className="card   shadow-xl mt-10 border border-gray-200 hover:scale-110 transition-all">
-      <div className="card-body ">
+      <div className="card-body h-full flex flex-col justify-between">
         <div className="flex justify-end">
           <span
             className={`badge badge-xs p-5 rounded-full text-[16px] ${tag === "popular" && "bg-[#E1E7FF] text-[#9514FA]"} ${tag === "new" && "bg-[#DBFCE7] text-[#0A883E]"} ${tag === "best seller" && "bg-[#FEF3C6] text-[#BB4D00]"}`}
@@ -30,7 +30,8 @@ const Product = ({ product, carts, setCart }) => {
           <h2 className="text-4xl font-bold">{name}</h2>
           <p className="text-[#627382] text-[16px]">{description}</p>
           <span className="text-xl">
-            <span className="font-bold text-3xl">${price}</span>/mo
+            <span className="font-bold text-3xl">${price}</span>/
+            <span className="text-[16px] text-gray-400">{period}</span>
           </span>
         </div>
 

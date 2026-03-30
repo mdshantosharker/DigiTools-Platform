@@ -32,7 +32,7 @@ const SimpleCard = ({ simple }) => {
           </p>
 
           <span className="text-xl">
-            <span className="font-bold text-3xl">${price}</span>/mo
+            <span className="font-bold text-3xl">${price}</span>/Month
           </span>
         </div>
 

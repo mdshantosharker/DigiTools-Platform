@@ -6,6 +6,8 @@ import DigitalTools from "./components/DigitalTools/DigitalTools";
 import Navbar from "./components/Navbar/Navbar";
 import StartIn from "./components/StartIn/StartIn";
 import SimpleCards from "./components/SimpleContainer/SimpleCards";
+import Ready from "./components/ReadySection/Ready";
+import Footer from "./components/Footer/Footer";
 
 const fetchProducts = async () => {
   const res = await fetch("/data.json");
@@ -40,6 +42,8 @@ function App() {
       />
       <StartIn startPromise={startPromise} />
       <SimpleCards simplePromise={simplePromise} />
+      <Ready />
+      <Footer />
     </>
   );
 }

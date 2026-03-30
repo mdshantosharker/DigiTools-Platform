@@ -2,121 +2,78 @@
   {
     "id": 1,
     "name": "AI Resume Builder",
-    "description": "Create professional resumes with AI-powered suggestions.",
+    "description": "Create professional, modern resumes quickly with AI suggestions, smart formatting, and industry-ready templates to impress recruiters.",
     "price": 9.99,
     "period": "monthly",
     "tag": "popular",
     "tagType": "popular",
-    "features": [
-      "100+ templates",
-      "ATS optimization",
-      "Export to PDF"
-    ],
-    "icon": "FaFileAlt"
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "/products/design-tool.png"
   },
   {
     "id": 2,
-    "name": "AI Cover Letter Generator",
-    "description": "Generate tailored cover letters instantly.",
+    "name": "Cover Letter AI",
+    "description": "Generate personalized, job-specific cover letters instantly using AI, helping you make strong first impressions for each application.",
     "price": 4.99,
     "period": "one-time",
     "tag": "new",
     "tagType": "new",
-    "features": [
-      "Custom job matching",
-      "Multiple formats",
-      "Download as PDF"
-    ],
-    "icon": "FaEnvelopeOpenText"
+    "features": ["Custom job matching", "Multiple formats", "Download as PDF"],
+    "icon": "/products/operation.png"
   },
   {
     "id": 3,
-    "name": "LinkedIn Profile Optimizer",
-    "description": "Enhance your LinkedIn profile for better visibility.",
+    "name": "LinkedIn Optimizer",
+    "description": "Boost LinkedIn profile visibility with AI-driven suggestions, keyword optimization, and insights to attract recruiters effectively  fast.",
     "price": 7.99,
     "period": "monthly",
     "tag": "best seller",
     "tagType": "best",
-    "features": [
-      "Headline optimization",
-      "Keyword suggestions",
-      "Profile scoring"
-    ],
-    "icon": "FaLinkedin"
+    "features": ["Headline optimization", "Keyword suggestions", "Profile scoring"],
+    "icon": "/products/portfolio.png"
   },
   {
     "id": 4,
-    "name": "AI Portfolio Builder",
-    "description": "Build a stunning portfolio website in minutes.",
+    "name": "Portfolio Builder",
+    "description": "Build stunning responsive portfolio websites quickly with drag-and-drop tools, custom domains, and modern design templates easily.",
     "price": 19.99,
     "period": "yearly",
     "tag": "popular",
     "tagType": "popular",
-    "features": [
-      "Drag & drop builder",
-      "Custom domains",
-      "Responsive design"
-    ],
-    "icon": "FaGlobe"
+    "features": ["Drag & drop builder", "Custom domains", "Responsive design"],
+    "icon": "/products/shopping-cart.png"
   },
   {
     "id": 5,
     "name": "Mock Interview AI",
-    "description": "Practice interviews with AI feedback.",
+    "description": "Practice real interview scenarios with AI feedback, improve answers, and gain confidence and analysis.",
     "price": 14.99,
     "period": "monthly",
     "tag": "new",
     "tagType": "new",
-    "features": [
-      "Real-time feedback",
-      "Industry-specific questions",
-      "Performance analytics"
-    ],
-    "icon": "FaMicrophone"
+    "features": ["Real-time feedback", "Industry-specific questions", "Performance analytics"],
+    "icon": "/products/social-media.png"
   },
   {
     "id": 6,
-    "name": "Job Tracker Pro",
-    "description": "Track all your job applications in one place.",
+    "name": "Job Tracker",
+    "description": "Manage and track all job applications in one place with status updates, reminders, and  progress efficiently.",
     "price": 5.99,
     "period": "monthly",
     "tag": "best seller",
     "tagType": "best",
-    "features": [
-      "Application tracking",
-      "Status updates",
-      "Reminder notifications"
-    ],
-    "icon": "FaTasks"
+    "features": ["Application tracking", "Status updates", "Reminder notifications"],
+    "icon": "/products/writing_2327400 1.png"
   },
   {
     "id": 7,
-    "name": "AI Skill Analyzer",
-    "description": "Analyze and improve your skillset using AI.",
+    "name": "Skill Analyzer",
+    "description": "Analyze current skills, identify gaps, and get AI-powered learning roadmaps and course recommendations to grow quickly and efficiently.",
     "price": 11.99,
     "period": "yearly",
     "tag": "popular",
     "tagType": "popular",
-    "features": [
-      "Skill gap analysis",
-      "Learning roadmap",
-      "Course recommendations"
-    ],
-    "icon": "FaBrain"
-  },
-  {
-    "id": 8,
-    "name": "Freelance Proposal Generator",
-    "description": "Create winning freelance proposals quickly.",
-    "price": 6.99,
-    "period": "one-time",
-    "tag": "new",
-    "tagType": "new",
-    "features": [
-      "Client-specific proposals",
-      "Editable templates",
-      "Export options"
-    ],
-    "icon": "FaFileSignature"
+    "features": ["Skill gap analysis", "Learning roadmap", "Course recommendations"],
+    "icon": "/products/camera.png"
   }
 ]

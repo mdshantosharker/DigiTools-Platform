@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Starter",
+    "description": "Perfect for getting started",
+    "price": 0,
+    "features": [
+      "Access to 10 free tools",
+      "Basic templates",
+      "Community support",
+      "1 project per month"
+    ],
+    "buttonText": "Start Free Trial"
+  },
+  {
+    "id": 2,
+    "name": "AI Image Generator",
+    "description": "Generate stunning images from text prompts with AI-powered models.",
+    "price": 14.99,
+    "features": [
+      "High-resolution images",
+      "Multiple styles",
+      "Fast generation"
+    ],
+    "buttonText": "Try Now"
+  },
+  {
+    "id": 3,
+    "name": "AI Content Writer",
+    "description": "Write blog posts, social media content, or emails quickly with AI assistance.",
+    "price": 12.99,
+    "features": ["SEO optimized", "Multiple tones", "Plagiarism-free"],
+    "buttonText": "Get Started"
+  }
+]

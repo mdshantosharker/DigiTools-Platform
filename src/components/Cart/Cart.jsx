@@ -7,7 +7,7 @@ const Cart = ({ cart, carts, setCart }) => {
   const handleRemove = (id) => {
     const filterCarts = carts.filter((c) => c.id !== id);
     setCart(filterCarts);
-    toast.success("Remove Product from the cart!");
+    toast.warn("Remove Product from the cart!");
   };
   return (
     <>

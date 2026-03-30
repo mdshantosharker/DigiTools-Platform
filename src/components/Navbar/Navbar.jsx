@@ -65,9 +65,11 @@ const Navbar = ({ carts }) => {
           <div className="navbar-end gap-5 items-center ">
             <div className="relative">
               <MdOutlineShoppingCart size={20} />
-              <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
-                {carts.length}
-              </span>
+              {carts.length > 0 && (
+                <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
+                  {carts.length}
+                </span>
+              )}
             </div>
             <p>Login</p>
             <a className="btn rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] ">

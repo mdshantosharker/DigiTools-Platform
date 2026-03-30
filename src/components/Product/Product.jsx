@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import List from "../List/List";
+import { AiOutlineCheck } from "react-icons/ai";
 
 const Product = ({ product, carts, setCart }) => {
   const { name, icon, description, features, price, tag, period } = product;
@@ -9,10 +10,11 @@ const Product = ({ product, carts, setCart }) => {
     setBuy(true);
     const alreadyAdded = carts.find((c) => c.id === product.id);
     if (alreadyAdded) {
-      toast("Already added!");
+      toast.warn("Already added!");
       return;
     }
     setCart([...carts, product]);
+    toast.success("Product added to the Cart!");
   };
   return (
     <div className="card   shadow-xl mt-10 border border-gray-200 hover:scale-110 transition-all">
@@ -43,9 +45,18 @@ const Product = ({ product, carts, setCart }) => {
         <div className="mt-6">
           <button
             onClick={() => handleBuy()}
-            className="btn  btn-block text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full p-5"
+            className={`btn  btn-block text-white  rounded-full p-5 ${buy ? "bg-green-500" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA]"}`}
           >
-            {buy ? " Buy" : " Buy Now"}
+            {buy ? (
+              <>
+                <div className="flex items-center justify-center">
+                  <AiOutlineCheck size={20} />
+                  <h1>Added to Cart!</h1>
+                </div>
+              </>
+            ) : (
+              "Buy Now"
+            )}
           </button>
         </div>
       </div>

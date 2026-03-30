@@ -1,16 +1,31 @@
-# React + Vite
+# DigiTools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Name
 
-Currently, two official plugins are available:
+DigiTools Platform
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📝 Description
 
-## React Compiler
+DigiTools Platform is a modern web-based application that provides users with a collection of useful digital tools in one place. It is designed to improve productivity by offering smart, easy-to-use features with a clean and responsive user interface.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Technologies Used
 
-## Expanding the ESLint configuration
+- React.js
+- Tailwind CSS
+- JavaScript (ES6)
+- JSON Data
+- React Icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+1. 🛒 **Cart Management System**
+   Users can add products to the cart, view them in a single-column layout, and see details like name, icon, and price.
+
+2. 🔢 **Dynamic Navbar Counter**
+   The total number of selected products is automatically displayed in the navbar and updates in real-time.
+
+3. ❌ **Remove & Checkout Functionality**
+   - Users can remove individual products from the cart using the remove button.
+   - Total price of selected products is calculated and displayed.
+   - "Proceed to Checkout" button clears all cart items at once.
+   - All actions (add, remove, checkout) show alerts using React Toastify.

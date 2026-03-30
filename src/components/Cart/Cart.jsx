@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const Cart = ({ cart, carts, setCart }) => {
   const { icon, name, price } = cart;
@@ -6,6 +7,7 @@ const Cart = ({ cart, carts, setCart }) => {
   const handleRemove = (id) => {
     const filterCarts = carts.filter((c) => c.id !== id);
     setCart(filterCarts);
+    toast.success("Remove Product from the cart!");
   };
   return (
     <>
@@ -20,7 +22,10 @@ const Cart = ({ cart, carts, setCart }) => {
           </div>
         </div>
 
-        <button onClick={() => handleRemove(cart.id)} className="text-[#FF3980] font-bold text-xs lg:text-xl">
+        <button
+          onClick={() => handleRemove(cart.id)}
+          className="text-[#FF3980] font-bold text-xs lg:text-xl"
+        >
           Remove
         </button>
       </div>

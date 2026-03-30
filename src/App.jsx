@@ -17,8 +17,14 @@ const fetchStartCarts = async () => {
   return res.json();
 };
 
+const fetchSimple = async () => {
+  const res = await fetch("/simple.json");
+  return res.json();
+};
+
 const productsPromise = fetchProducts();
 const startPromise = fetchStartCarts();
+const simplePromise = fetchSimple();
 
 function App() {
   const [carts, setCart] = useState([]);
@@ -33,7 +39,7 @@ function App() {
         setCart={setCart}
       />
       <StartIn startPromise={startPromise} />
-      <SimpleCards />
+      <SimpleCards simplePromise={simplePromise} />
     </>
   );
 }

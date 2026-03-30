@@ -10,26 +10,36 @@
       "Community support",
       "1 project per month"
     ],
-    "buttonText": "Start Free Trial"
+    "buttonText": "Get Started Free"
   },
   {
     "id": 2,
-    "name": "AI Image Generator",
-    "description": "Generate stunning images from text prompts with AI-powered models.",
-    "price": 14.99,
+    "name": "Pro",
+    "description": "Best for professionals",
+    "price": 29,
     "features": [
-      "High-resolution images",
-      "Multiple styles",
-      "Fast generation"
+      " Access to all premium tools",
+      "Unlimited templates",
+      "Priority support",
+      "Unlimited projects",
+      "Cloud sync",
+      "Advanced analytics"
     ],
-    "buttonText": "Try Now"
+    "buttonText": "Start Pro Trial"
   },
   {
     "id": 3,
-    "name": "AI Content Writer",
-    "description": "Write blog posts, social media content, or emails quickly with AI assistance.",
-    "price": 12.99,
-    "features": ["SEO optimized", "Multiple tones", "Plagiarism-free"],
-    "buttonText": "Get Started"
+    "name": "Enterprise",
+    "description": "For teams and businesses",
+    "price": 99,
+    "features": [
+      "Everything in Pro",
+      "Team collaboration",
+      "Custom integrations",
+      "Dedicated support",
+      "SLA guarantee",
+      "Custom branding"
+    ],
+    "buttonText": "Contact Sales"
   }
 ]

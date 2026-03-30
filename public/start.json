@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "img": "/user.png",
+    "name": "Create Account",
+    "description": "Sign up for free in seconds. No credit card required to get started."
+  },
+  {
+    "id": 2,
+    "img": "/package.png",
+    "name": "Choose Products",
+    "description": "Browse our catalog and select the tools that fit your needs."
+  },
+  {
+    "id": 3,
+    "img": "/rocket.png",
+    "name": "Start Creating",
+    "description": "Download and start using your premium tools immediately."
+  }
+]

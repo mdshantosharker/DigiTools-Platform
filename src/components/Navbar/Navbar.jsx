@@ -71,7 +71,7 @@ const Navbar = ({ carts }) => {
                 </span>
               )}
             </div>
-            <p>Login</p>
+            <p className="cursor-pointer">Login</p>
             <a className="btn rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] ">
               Get Started
             </a>

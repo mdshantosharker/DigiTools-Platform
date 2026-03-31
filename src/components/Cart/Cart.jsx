@@ -24,7 +24,7 @@ const Cart = ({ cart, carts, setCart }) => {
 
         <button
           onClick={() => handleRemove(cart.id)}
-          className="text-[#FF3980] font-bold text-xs lg:text-xl"
+          className="text-[#FF3980] font-bold text-xs cursor-pointer lg:text-xl "
         >
           Remove
         </button>

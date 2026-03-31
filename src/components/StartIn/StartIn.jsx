@@ -5,10 +5,10 @@ const StartIn = ({ startPromise }) => {
 
   return (
     <>
-      <div className="bg-[#F9FAFC] p-10 mt-20">
-        <div className="lg:max-w-7xl w-11/12 mx-auto mb-20 ">
+      <div className="bg-[#F9FAFC] p-5 md:p-10 mt-10">
+        <div className="lg:max-w-7xl  mx-auto mb-20 ">
           <div className="text-center my-20 space-y-3">
-            <h1 className="font-bold text-5xl">Get Started in 3 Steps</h1>
+            <h1 className="font-bold text-[26px] md:text-5xl">Get Started in 3 Steps</h1>
             <p className="text-[#627382]">
               Start using premium digital tools in minutes, not hours.
             </p>

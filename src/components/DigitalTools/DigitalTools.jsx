@@ -11,7 +11,7 @@ const DigitalTools = ({ productsPromise, carts, setCart }) => {
   return (
     <div>
       <div className="text-center mt-16 space-y-4">
-        <h1 className="font-bold text-5xl">Premium Digital Tools</h1>
+        <h1 className="font-bold text-3xl md:text-5xl">Premium Digital Tools</h1>
         <p className="text-[#627382] text-[16px]">
           Choose from our curated collection of premium digital products
           designed <br /> to boost your productivity and creativity.

@@ -11,13 +11,13 @@ const Carts = ({ carts, setCart }) => {
   };
   return (
     <>
-      <div className="w-11/12 lg:max-w-7xl mx-auto border border-gray-100 shadow-2xl rounded-2xl p-10 space-y-5 my-10">
+      <div className="w-11/12 lg:max-w-7xl mx-auto border border-gray-100 shadow-xl rounded-2xl p-10 space-y-5 my-10">
         <h1 className=" font-bold text-3xl">Your Cart</h1>
 
         {carts.length === 0 ? (
           <div className="flex flex-col items-center justify-center">
             <CiShoppingCart size={100} color="gray" />
-            <h1 className="text-5xl text-gray-400">Your Cart is empty</h1>
+            <h1 className="md:text-5xl text-2xl text-gray-400">Your Cart is empty</h1>
           </div>
         ) : (
           <>

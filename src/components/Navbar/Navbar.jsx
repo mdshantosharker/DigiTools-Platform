@@ -55,7 +55,7 @@ const Navbar = ({ carts }) => {
                 {links}
               </ul>
             </div>
-            <a className="text-3xl font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+            <a className="lg:text-3xl text-lg font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
               DigiTools
             </a>
           </div>
